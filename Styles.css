@@ -30,7 +30,7 @@ p {
 /*Seccio Hero*/
 .hero {
   height: 60vh;
-  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d3'); /* Puedes cambiar esta URL */
+  background-image: url('/DennisPortu.github.io/fondo.jpg'); /* Puedes cambiar esta URL */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* efecto parallax */
@@ -38,6 +38,7 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
+  
 }
 
 .hero::before {
