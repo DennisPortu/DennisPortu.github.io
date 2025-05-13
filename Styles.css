@@ -90,7 +90,8 @@ p {
 .card.epic { background: linear-gradient(135deg, #222, #555); }
 .card.rockstar { background: linear-gradient(135deg, #feca1b, #c59c00); color: black; }
 .card.ubisoft { background: linear-gradient(135deg, #1b2735, #3b5ca3); }
-.card.valve { background: linear-gradient(135deg, #b00000, #4a0000); }
+.card.valve { background: linear-gradient(135deg, #0a0808, #4d0000); }
+.card.nintendo { background: linear-gradient(135deg, #ff0000, #520b0b); }
 
 footer {
   text-align: center;
