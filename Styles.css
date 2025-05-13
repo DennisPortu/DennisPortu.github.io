@@ -52,12 +52,12 @@ p {
   position: relative;
   text-align: center;
   z-index: 1;
-  color: #a1a1a1;
+  color: #00ffc8;
 }
 
 .hero h1 {
   font-size: 4em;
-  text-shadow: 0 0 10px #f7f7f7;
+  text-shadow: 0 0 10px #00ffc8;
 }
 
 /*Seccio grid*/
@@ -78,7 +78,7 @@ p {
   transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
   color: white;
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
@@ -100,6 +100,3 @@ footer {
   background: #1f1f1f;
   color: #aaaaaa;
 }
-
-
-
