@@ -19,7 +19,7 @@ header {
 
 h1 {
   font-size: 3em;
-  color: #00ffc8;
+  color: #f7f7f7;
 }
 
 p {
@@ -51,12 +51,12 @@ p {
   position: relative;
   text-align: center;
   z-index: 1;
-  color: #00ffc8;
+  color: #a1a1a1;
 }
 
 .hero h1 {
   font-size: 4em;
-  text-shadow: 0 0 10px #00ffc8;
+  text-shadow: 0 0 10px #f7f7f7;
 }
 
 /*Seccio grid*/
