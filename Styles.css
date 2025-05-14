@@ -19,18 +19,63 @@ header {
 
 h1 {
   font-size: 3em;
-  color: #00ffc8;
+  color: #ffffff;
 }
 
 p {
   margin-top: 10px;
-  color: #cccccc;
+  color: #ffffff;
 }
 
+/*Menu*/
+/*****************************************************************/
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.menu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu nav a.inici {
+  color: rgb(251, 221, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.menu nav a.contacte {
+  color: rgb(251, 221, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.menu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+
+
+/*****************************************************************/
+
 /*Seccio Hero*/
+/*****************************************************************/
 .hero {
   height: 60vh;
-  background-image: url('/DennisPortu.github.io/fondo.jpg'); /* Puedes cambiar esta URL */
+  background-image: url('/img/fondo.jpg'); /* Puedes cambiar esta URL */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* efecto parallax */
@@ -52,26 +97,29 @@ p {
   position: relative;
   text-align: center;
   z-index: 1;
-  color: #00ffc8;
+  color: #ffffff;
 }
 
 .hero h1 {
+  color: rgb(251, 221, 255);
   font-size: 4em;
-  text-shadow: 0 0 10px #00ffc8;
+  text-shadow: 0 0 20px #fa71ff;
 }
+/*****************************************************************/
 
 /*Seccio grid*/
+/*****************************************************************/
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   padding: 40px 20px;
-  max-width: 2400px;
+  max-width: 2500px;
   margin: auto;
 }
 
 .card {
-  block-size: 290px;
+  block-size: 250px;
   background-color: #1e1e1e;
   border-radius: 20px;
   padding: 40px 20px;
@@ -80,38 +128,57 @@ p {
   color: white;
 }
 
-.card:hover {
+.card.epic:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #7c7c7c;
+  box-shadow: 0 0 20px #ff0000;
 }
 
-/* Estils per a empreses específiques */
+/* Estils botons*/
 .card.epic { 
   background-image: url(./img/EpicGames_logo.png);
   background-size: 180%;
   background-position: center; 
+}.card.epic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #383838;
 }
 
 .card.rockstar { 
   background-image: url(./img/Rockstar_logo.png);
   background-size: 79%;
   background-position: center; 
+}.card.rockstar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffe600;
 }
+
 .card.ubisoft { 
   background-image: url(./img/Ubisoft_logo.png);
   background-size: 120%;
   background-position: center;
+}.card.ubisoft:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #383838;
 }
+
 .card.valve { 
   background-image: url(./img/Valve_logo.png);
   background-size: 150%;
   background-position: center;
+}.card.valve:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff4848;
 }
+
 .card.nintendo { 
   background-image: url(./img/Nintendo_logo.png);
   background-size: 110%;
   background-position: center; 
+}.card.nintendo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff0000;
 }
+/*****************************************************************/
 
 footer {
   text-align: center;
