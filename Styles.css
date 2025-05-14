@@ -84,7 +84,7 @@ p {
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #7c7c7c;
+  box-shadow: 0 0 20px black;
 }
 
 /* Estils per a empreses específiques */
@@ -104,4 +104,77 @@ footer {
 .logotip {
   width: 1000px;
   margin-top: 100px;
+}
+
+.valvefoto {
+  width: 1400px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+nav {
+  background-color: #222;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.contact-button a {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color:#0a0808;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.boto-contacte {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff4c4c;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+button:hover {
+  background-color: #e03e3e;
 }
