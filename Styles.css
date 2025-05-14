@@ -66,20 +66,18 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   padding: 40px 20px;
-  max-width: 1500px;
+  max-width: 2400px;
   margin: auto;
 }
 
 .card {
+  block-size: 290px;
   background-color: #1e1e1e;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 40px 20px;
-  text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
   color: white;
-  font-size: 1.3em;
-  font-weight: bold;
 }
 
 .card:hover {
@@ -88,15 +86,41 @@ p {
 }
 
 /* Estils per a empreses específiques */
-.card.epic { background: linear-gradient(135deg, #222, #555); }
-.card.rockstar { background: linear-gradient(135deg, #feca1b, #c59c00); color: black; }
-.card.ubisoft { background: linear-gradient(135deg, #1b2735, #3b5ca3); }
-.card.valve { background: linear-gradient(135deg, #0a0808, #4d0000); }
-.card.nintendo { background: linear-gradient(135deg, #ff0000, #520b0b); }
+.card.epic { 
+  background-image: url(./img/EpicGames_logo.png);
+  background-size: 180%;
+  background-position: center; 
+}
+
+.card.rockstar { 
+  background-image: url(./img/Rockstar_logo.png);
+  background-size: 79%;
+  background-position: center; 
+}
+.card.ubisoft { 
+  background-image: url(./img/Ubisoft_logo.png);
+  background-size: 120%;
+  background-position: center;
+}
+.card.valve { 
+  background-image: url(./img/Valve_logo.png);
+  background-size: 150%;
+  background-position: center;
+}
+.card.nintendo { 
+  background-image: url(./img/Nintendo_logo.png);
+  background-size: 110%;
+  background-position: center; 
+}
 
 footer {
   text-align: center;
   padding: 20px;
   background: #1f1f1f;
   color: #aaaaaa;
+}
+
+.logotip {
+  width: 1000px;
+  margin-top: 100px;
 }
