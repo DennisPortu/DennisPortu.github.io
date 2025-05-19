@@ -67,8 +67,6 @@ p {
 .menu nav a:hover {
   background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
 }
-
-
 /*****************************************************************/
 
 /*Seccio Hero*/
@@ -127,13 +125,10 @@ p {
   text-decoration: none;
   color: white;
 }
-
-.card.epic:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #ff0000;
-}
+/*****************************************************************/
 
 /* Estils botons*/
+/*****************************************************************/
 .card.epic { 
   background-image: url(./img/EpicGames_logo.png);
   background-size: 180%;
@@ -154,7 +149,7 @@ p {
 
 .card.ubisoft { 
   background-image: url(./img/Ubisoft_logo.png);
-  background-size: 120%;
+  background-size: 110%;
   background-position: center;
 }.card.ubisoft:hover {
   transform: scale(1.05);
