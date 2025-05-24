@@ -28,9 +28,14 @@ p {
 }
 /*****************************************************************/
 
+
+
+/*INDEX*/
+/*****************************************************************/
+
 /*Menu*/
 /*****************************************************************/
-.menu {
+.IndexMenu {
   position: absolute;
   top: 20px;
   left: 0;
@@ -41,13 +46,13 @@ p {
   padding: 0 30px;
 }
 
-.menu nav {
+.IndexMenu nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu nav a.inici {
+.IndexMenu nav a.inici {
   color: rgb(251, 221, 255);
   text-decoration: none;
   font-size: 1.6em;
@@ -56,7 +61,7 @@ p {
   transition: 0.3s;
 }
 
-.menu nav a.contacte {
+.IndexMenu nav a.contacte {
   color: rgb(251, 221, 255);
   text-decoration: none;
   font-size: 1.6em;
@@ -65,15 +70,15 @@ p {
   transition: 0.3s;
 }
 
-.menu nav a:hover {
+.IndexMenu nav a:hover {
   background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
 }
 /*****************************************************************/
 
-/*Seccio Hero*/
+/*Titulo*/
 /*****************************************************************/
-.hero {
-  height: 60vh;
+.IndexT {
+  height: 63vh;
   background-image: url('/img/fondo.jpg'); /* Puedes cambiar esta URL */
   background-size: cover;
   background-position: center;
@@ -85,33 +90,33 @@ p {
   
 }
 
-.hero::before {
+.IndexT::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
 }
 
-.hero-content {
+.Index-content {
   position: relative;
   text-align: center;
   z-index: 1;
   color: #ffffff;
 }
 
-.hero h1 {
+.IndexT h1 {
   color: rgb(251, 221, 255);
   font-size: 4em;
   text-shadow: 0 0 20px #fa71ff;
 }
 /*****************************************************************/
 
-/*Seccio grid*/
+/*Botons*/
 /*****************************************************************/
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
+  gap: 30px;
   padding: 40px 20px;
   max-width: 2500px;
   margin: auto;
@@ -121,23 +126,16 @@ p {
   block-size: 250px;
   background-color: #1e1e1e;
   border-radius: 20px;
-  padding: 40px 20px;
   transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration: none;
-  color: white;
-}
-
-.card.epic:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #ff0000;
 }
 /*****************************************************************/
 
-/* Estils botons*/
+/*Estils botons*/
 /*****************************************************************/
 .card.epic { 
   background-image: url(./img/EpicGames_logo.png);
-  background-size: 180%;
+  background-size: contain;
+  background-size: 150%;
   background-position: center; 
 }.card.epic:hover {
   transform: scale(1.05);
@@ -146,24 +144,17 @@ p {
 
 .card.rockstar { 
   background-image: url(./img/Rockstar_logo.png);
-  background-size: 79%;
+  background-size: contain;
+  background-size: 80%;
   background-position: center; 
 }.card.rockstar:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px #ffe600;
 }
 
-.card.ubisoft { 
-  background-image: url(./img/Ubisoft_logo.png);
-  background-size: 120%;
-  background-position: center;
-}.card.ubisoft:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #383838;
-}
-
 .card.valve { 
   background-image: url(./img/Valve_logo.png);
+  background-size: contain;
   background-size: 150%;
   background-position: center;
 }.card.valve:hover {
@@ -173,6 +164,7 @@ p {
 
 .card.nintendo { 
   background-image: url(./img/Nintendo_logo.png);
+  background-size: contain;
   background-size: 110%;
   background-position: center; 
 }.card.nintendo:hover {
@@ -180,6 +172,257 @@ p {
   box-shadow: 0 0 10px #ff0000;
 }
 /*****************************************************************/
+
+
+
+/*EPIC*/
+/*****************************************************************/
+
+/*Menu*/
+/*****************************************************************/
+.EpicMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.EpicMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.EpicMenu nav a.inici {
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.EpicMenu nav a.contacte {
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.EpicMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Titulo*/
+/*****************************************************************/
+.EpicT {
+  height: 63vh;
+  background-image: url('/img/EpicT.jpg'); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.EpicT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Epic-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.EpicT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*EpicText*/
+/*****************************************************************/
+.EpicTitul {
+  background-color: #2a2a2a; /* Gris oscuro */
+  color: #ffffff; /* Texto blanco */
+  text-align: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.EpicTitul h1 {
+  font-size: 2rem;
+  color: #e0e0e0; /* Gris claro para el título */
+  margin: 0;
+}
+
+.EpicContenido {
+  background-color: #1c1c1c; /* Fondo negro grisáceo */
+  color: #f5f5f5; /* Texto blanco grisáceo */
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.EpicContenido p {
+  margin-bottom: 20px;
+  color: #dcdcdc; /* Gris claro para los párrafos */
+}
+
+.EpicContenido p:last-child {
+  margin-bottom: 0;
+}
+/*****************************************************************/
+
+
+
+/*ROCKSTAR*/
+/*****************************************************************/
+
+/*Menu*/
+/*****************************************************************/
+.RockstarMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.RockstarMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.RockstarMenu nav a.inici {
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.RockstarMenu nav a.contacte {
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.RockstarMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Titulo*/
+/*****************************************************************/
+.RockstarT {
+  height: 63vh;
+  background-image: url('/img/EpicT.jpg'); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.RockstarT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Rockstar-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.RockstarT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*RockstarText*/
+/*****************************************************************/
+.RockstarTitul {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.RockstarTitul h1 {
+  font-size: 2rem;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.RockstarContenido {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  padding: 40px;
+  margin: 20px auto 60px;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.RockstarContenido p {
+  margin-bottom: 20px;
+  color: #dcdcdc;
+}
+
+.RockstarContenido p:last-child {
+  margin-bottom: 0;
+}
+/*****************************************************************/
+
 
 footer {
   text-align: center;
