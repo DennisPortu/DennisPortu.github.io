@@ -1,31 +1,58 @@
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-  <meta charset="UTF-8">
-  <title>Contacte - Valve</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-  <body>
-    <nav>
-      <div class="nav-links">
-        <a href="index.html">Inici</a>
-      </div>
-    </nav>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contacte</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-    <div class="container">
-      <h2>Contacta amb nosaltres</h2>
-      <form action="enviar-formulari.php" method="post">
-        <label for="nom">Nom:</label>
+  <body class="ContacteB">
+    <section class="ContacteT">
+      <div class="ContacteMenu">
+        <nav>
+          <a class="inici" href="index.html">Inici</a>
+          <a class="contacte active" href="contacte.html">Contacte</a>
+        </nav>
+      </div>
+      <div class="Contacte-content">
+        <h1>Contacta amb Nosaltres</h1>
+        <p>Estem aquí per ajudar-te. Omple el formulari i et respondrem al més aviat possible.</p>
+      </div>
+    </section>
+
+    <div class="ContacteForm">
+      <form id="formulariContacte">
+        <label for="nom">Nom</label>
         <input type="text" id="nom" name="nom" required>
 
-        <label for="email">Correu electrònic:</label>
+        <label for="email">Correu electrònic</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="missatge">Missatge:</label>
+        <label for="missatge">Missatge</label>
         <textarea id="missatge" name="missatge" rows="6" required></textarea>
 
         <button type="submit">Enviar</button>
       </form>
+
+      <div id="missatgeEnviat" class="missatge-exit" style="display: none;">
+        Enviat correctament!
+      </div>
     </div>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('formulariContacte');
+        const missatge = document.getElementById('missatgeEnviat');
+      
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          missatge.style.display = 'block';
+        
+        setTimeout(function () {
+          missatge.style.display = 'none';
+        }, 1000);
+      });
+      });
+</script>
+
   </body>
 </html>
