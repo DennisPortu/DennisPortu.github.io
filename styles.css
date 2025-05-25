@@ -152,7 +152,7 @@ p {
   background-position: center; 
 }.card.rockstar:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #ffe600;
+  box-shadow: 0 0 10px #c7b836;
 }
 
 .card.valve { 
