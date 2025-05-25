@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -33,7 +32,11 @@ p {
 /*INDEX*/
 /*****************************************************************/
 
-/*Menu*/
+.IndexB {
+  background-color: #121212;
+}
+
+/*Index Menu*/
 /*****************************************************************/
 .IndexMenu {
   position: absolute;
@@ -75,7 +78,7 @@ p {
 }
 /*****************************************************************/
 
-/*Titulo*/
+/*Index Titulo*/
 /*****************************************************************/
 .IndexT {
   height: 63vh;
@@ -178,7 +181,11 @@ p {
 /*EPIC*/
 /*****************************************************************/
 
-/*Menu*/
+.EpicB {
+    background-color: #121212;
+}
+
+/*Epic Menu*/
 /*****************************************************************/
 .EpicMenu {
   position: absolute;
@@ -220,7 +227,7 @@ p {
 }
 /*****************************************************************/
 
-/*Titulo*/
+/*Epic Titulo*/
 /*****************************************************************/
 .EpicT {
   height: 63vh;
@@ -303,7 +310,11 @@ p {
 /*ROCKSTAR*/
 /*****************************************************************/
 
-/*Menu*/
+.RockstarB {
+    background-color: #724a00;
+}
+
+/*Rockstar Menu*/
 /*****************************************************************/
 .RockstarMenu {
   position: absolute;
@@ -323,7 +334,7 @@ p {
 }
 
 .RockstarMenu nav a.inici {
-  color: rgb(180, 180, 180);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.6em;
   padding: 10px 15px;
@@ -332,7 +343,7 @@ p {
 }
 
 .RockstarMenu nav a.contacte {
-  color: rgb(180, 180, 180);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.6em;
   padding: 10px 15px;
@@ -345,11 +356,11 @@ p {
 }
 /*****************************************************************/
 
-/*Titulo*/
+/*Rockstar Titulo*/
 /*****************************************************************/
 .RockstarT {
   height: 63vh;
-  background-image: url('/img/EpicT.jpg'); /* Puedes cambiar esta URL */
+  background-image: url('/img/RockstarT.jpeg'); /* Puedes cambiar esta URL */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* efecto parallax */
@@ -384,25 +395,25 @@ p {
 /*RockstarText*/
 /*****************************************************************/
 .RockstarTitul {
-  background-color: #2a2a2a;
+  background-color: #925f00;
   color: #ffffff;
   text-align: center;
   padding: 30px 20px;
   margin: 40px auto;
   max-width: 800px;
   border-radius: 10px;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);      
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .RockstarTitul h1 {
   font-size: 2rem;
-  color: #e0e0e0;
+  color: #ffffff;
   margin: 0;
 }
 
 .RockstarContenido {
-  background-color: #1c1c1c;
+  background-color: rgb(139, 91, 0);
   color: #f5f5f5;
   padding: 40px;
   margin: 20px auto 60px;
@@ -415,10 +426,272 @@ p {
 
 .RockstarContenido p {
   margin-bottom: 20px;
-  color: #dcdcdc;
+  color: #ffffff;
 }
 
 .RockstarContenido p:last-child {
+  margin-bottom: 0;
+}
+/*****************************************************************/
+
+
+
+/*VALVE*/
+/*****************************************************************/
+
+.ValveB {
+    background-color: #611515;
+}
+
+/*****************************************************************/
+
+/*Valve Menu*/
+/*****************************************************************/
+.ValveMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.ValveMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ValveMenu nav a.inici {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.ValveMenu nav a.contacte {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.ValveMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Valve Titulo*/
+/*****************************************************************/
+.ValveT {
+  height: 63vh;
+  background-image: url('/img/ValveT.png'); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.ValveT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Valve-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.ValveT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*ValveText*/
+/*****************************************************************/
+.ValveTitul {
+  background-color: #8a1f1f;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);      
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ValveTitul h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.ValveContenido {
+  background-color: #751a1a;
+  color: #f5f5f5;
+  padding: 40px;
+  margin: 20px auto 60px;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.ValveContenido p {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.ValveContenido p:last-child {
+  margin-bottom: 0;
+}
+/*****************************************************************/
+
+
+
+/*NINTENDO*/
+/*****************************************************************/
+
+.NintendoB {
+    background-color: #520000;
+}
+
+/*****************************************************************/
+
+/*Nintendo Menu*/
+/*****************************************************************/
+.NintendoMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.NintendoMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NintendoMenu nav a.inici {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.NintendoMenu nav a.contacte {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.NintendoMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Nintendo Titulo*/
+/*****************************************************************/
+.NintendoT {
+  height: 63vh;
+  background-image: url('/img/NintendoT.jpg '); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.NintendoT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Nintendo-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.NintendoT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*NintendoText*/
+/*****************************************************************/
+.NintendoTitul {
+  background-color: #7e0000;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);      
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.NintendoTitul h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.NintendoContenido {
+  background-color: #6e0000;
+  color: #f5f5f5;
+  padding: 40px;
+  margin: 20px auto 60px;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.NintendoContenido p {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.NintendoContenido p:last-child {
   margin-bottom: 0;
 }
 /*****************************************************************/
