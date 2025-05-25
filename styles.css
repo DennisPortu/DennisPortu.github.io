@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -26,10 +25,20 @@ p {
   margin-top: 10px;
   color: #ffffff;
 }
-
-/*Menu*/
 /*****************************************************************/
-.menu {
+
+
+
+/*INDEX*/
+/*****************************************************************/
+
+.IndexB {
+  background-color: #121212;
+}
+
+/*Index Menu*/
+/*****************************************************************/
+.IndexMenu {
   position: absolute;
   top: 20px;
   left: 0;
@@ -40,13 +49,13 @@ p {
   padding: 0 30px;
 }
 
-.menu nav {
+.IndexMenu nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu nav a.inici {
+.IndexMenu nav a.inici {
   color: rgb(251, 221, 255);
   text-decoration: none;
   font-size: 1.6em;
@@ -55,7 +64,7 @@ p {
   transition: 0.3s;
 }
 
-.menu nav a.contacte {
+.IndexMenu nav a.contacte {
   color: rgb(251, 221, 255);
   text-decoration: none;
   font-size: 1.6em;
@@ -64,15 +73,15 @@ p {
   transition: 0.3s;
 }
 
-.menu nav a:hover {
+.IndexMenu nav a:hover {
   background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
 }
 /*****************************************************************/
 
-/*Seccio Hero*/
+/*Index Titulo*/
 /*****************************************************************/
-.hero {
-  height: 60vh;
+.IndexT {
+  height: 63vh;
   background-image: url('/img/fondo.jpg'); /* Puedes cambiar esta URL */
   background-size: cover;
   background-position: center;
@@ -84,33 +93,33 @@ p {
   
 }
 
-.hero::before {
+.IndexT::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
 }
 
-.hero-content {
+.Index-content {
   position: relative;
   text-align: center;
   z-index: 1;
   color: #ffffff;
 }
 
-.hero h1 {
+.IndexT h1 {
   color: rgb(251, 221, 255);
   font-size: 4em;
   text-shadow: 0 0 20px #fa71ff;
 }
 /*****************************************************************/
 
-/*Seccio grid*/
+/*Botons*/
 /*****************************************************************/
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
+  gap: 30px;
   padding: 40px 20px;
   max-width: 2500px;
   margin: auto;
@@ -120,18 +129,16 @@ p {
   block-size: 250px;
   background-color: #1e1e1e;
   border-radius: 20px;
-  padding: 40px 20px;
   transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration: none;
-  color: white;
 }
 /*****************************************************************/
 
-/* Estils botons*/
+/*Estils botons*/
 /*****************************************************************/
 .card.epic { 
   background-image: url(./img/EpicGames_logo.png);
-  background-size: 180%;
+  background-size: contain;
+  background-size: 150%;
   background-position: center; 
 }.card.epic:hover {
   transform: scale(1.05);
@@ -140,24 +147,17 @@ p {
 
 .card.rockstar { 
   background-image: url(./img/Rockstar_logo.png);
-  background-size: 79%;
+  background-size: contain;
+  background-size: 80%;
   background-position: center; 
 }.card.rockstar:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px #ffe600;
 }
 
-.card.ubisoft { 
-  background-image: url(./img/Ubisoft_logo.png);
-  background-size: 110%;
-  background-position: center;
-}.card.ubisoft:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #383838;
-}
-
 .card.valve { 
   background-image: url(./img/Valve_logo.png);
+  background-size: contain;
   background-size: 150%;
   background-position: center;
 }.card.valve:hover {
@@ -167,6 +167,7 @@ p {
 
 .card.nintendo { 
   background-image: url(./img/Nintendo_logo.png);
+  background-size: contain;
   background-size: 110%;
   background-position: center; 
 }.card.nintendo:hover {
@@ -174,6 +175,731 @@ p {
   box-shadow: 0 0 10px #ff0000;
 }
 /*****************************************************************/
+
+
+
+/*EPIC*/
+/*****************************************************************/
+
+.EpicB {
+    background-color: #121212;
+}
+
+/*Epic Menu*/
+/*****************************************************************/
+.EpicMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.EpicMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.EpicMenu nav a.inici {
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.EpicMenu nav a.contacte {
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.EpicMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Epic Titulo*/
+/*****************************************************************/
+.EpicT {
+  height: 63vh;
+  background-image: url('/img/EpicT.jpg'); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.EpicT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Epic-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.EpicT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*EpicText*/
+/*****************************************************************/
+.EpicTitul {
+  background-color: #2a2a2a; /* Gris oscuro */
+  color: #ffffff; /* Texto blanco */
+  text-align: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.EpicTitul h1 {
+  font-size: 2rem;
+  color: #e0e0e0; /* Gris claro para el título */
+  margin: 0;
+}
+
+.EpicContenido {
+  background-color: #1c1c1c; /* Fondo negro grisáceo */
+  color: #f5f5f5; /* Texto blanco grisáceo */
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.EpicContenido p {
+  margin-bottom: 20px;
+  color: #dcdcdc; /* Gris claro para los párrafos */
+}
+
+.EpicContenido p:last-child {
+  margin-bottom: 0;
+}
+/*****************************************************************/
+
+
+
+/*ROCKSTAR*/
+/*****************************************************************/
+
+.RockstarB {
+    background-color: #724a00;
+}
+
+/*Rockstar Menu*/
+/*****************************************************************/
+.RockstarMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.RockstarMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.RockstarMenu nav a.inici {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.RockstarMenu nav a.contacte {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.RockstarMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Rockstar Titulo*/
+/*****************************************************************/
+.RockstarT {
+  height: 63vh;
+  background-image: url('/img/RockstarT.jpeg'); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.RockstarT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Rockstar-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.RockstarT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*RockstarText*/
+/*****************************************************************/
+.RockstarTitul {
+  background-color: #925f00;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);      
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.RockstarTitul h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.RockstarContenido {
+  background-color: rgb(139, 91, 0);
+  color: #f5f5f5;
+  padding: 40px;
+  margin: 20px auto 60px;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.RockstarContenido p {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.RockstarContenido p:last-child {
+  margin-bottom: 0;
+}
+/*****************************************************************/
+
+
+
+/*VALVE*/
+/*****************************************************************/
+
+.ValveB {
+    background-color: #611515;
+}
+
+/*****************************************************************/
+
+/*Valve Menu*/
+/*****************************************************************/
+.ValveMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.ValveMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ValveMenu nav a.inici {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.ValveMenu nav a.contacte {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.ValveMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Valve Titulo*/
+/*****************************************************************/
+.ValveT {
+  height: 63vh;
+  background-image: url('/img/ValveT.png'); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.ValveT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Valve-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.ValveT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*ValveText*/
+/*****************************************************************/
+.ValveTitul {
+  background-color: #8a1f1f;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);      
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ValveTitul h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.ValveContenido {
+  background-color: #751a1a;
+  color: #f5f5f5;
+  padding: 40px;
+  margin: 20px auto 60px;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.ValveContenido p {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.ValveContenido p:last-child {
+  margin-bottom: 0;
+}
+/*****************************************************************/
+
+
+
+/*NINTENDO*/
+/*****************************************************************/
+
+.NintendoB {
+    background-color: #520000;
+}
+
+/*****************************************************************/
+
+/*Nintendo Menu*/
+/*****************************************************************/
+.NintendoMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.NintendoMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NintendoMenu nav a.inici {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.NintendoMenu nav a.contacte {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.NintendoMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Nintendo Titulo*/
+/*****************************************************************/
+.NintendoT {
+  height: 63vh;
+  background-image: url('/img/NintendoT.jpg '); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.NintendoT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Nintendo-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.NintendoT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*NintendoText*/
+/*****************************************************************/
+.NintendoTitul {
+  background-color: #7e0000;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);      
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.NintendoTitul h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.NintendoContenido {
+  background-color: #6e0000;
+  color: #f5f5f5;
+  padding: 40px;
+  margin: 20px auto 60px;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.NintendoContenido p {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.NintendoContenido p:last-child {
+  margin-bottom: 0;
+}
+/*****************************************************************/
+
+
+
+/*CONTACTE*/
+/*****************************************************************/
+
+.ContacteB {
+    background-color: #313131;
+}
+
+/*****************************************************************/
+
+/*Contacte Menu*/
+/*****************************************************************/
+.ContacteMenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; /* por encima del overlay oscuro */
+  background: transparent; /* sin fondo */
+  padding: 0 30px;
+}
+
+.ContacteMenu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ContacteMenu nav a.inici {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.ContacteMenu nav a.contacte {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.ContacteMenu nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* efecto hover suave */
+}
+/*****************************************************************/
+
+/*Contecte Titulo*/
+/*****************************************************************/
+.ContacteT {
+  height: 30vh;
+  background-image: url(''); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.ContacteT::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.Contacte-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.ContacteT h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  text-shadow: 0 0 20px #d4d4d4;
+}
+/*****************************************************************/
+
+/*Contacte From*/
+/*****************************************************************/
+.ContacteForm {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ContacteForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContacteForm label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ContacteForm input,
+.ContacteForm textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.ContacteForm input:focus,
+.ContacteForm textarea:focus {
+  outline: none;
+  background-color: #3a3a3a;
+}
+
+.ContacteForm button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ContacteForm button:hover {
+  background-color: #555;
+}
+
+.missatge-exit {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #2e7d32;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+/*****************************************************************/
+
+/*SideBar*/
+/*****************************************************************/
+.Sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 120px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Sidebar nav a {
+  display: block;
+  padding: 10px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+
+/* Botón flotante y fuera del aside */
+.sidebar-toggle {
+  position: fixed;
+  top: 80px;
+  left: 43px;
+  z-index: 1100;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*****************************************************************/
+
 
 footer {
   text-align: center;
